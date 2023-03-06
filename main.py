@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 import librosa
-song_path = '/home/bekzhan/dsd/tracks/wake_up/wake_up  (1) copy 2.mp3'
+song_path = '/home/bekzhan/DSD-project/DSD-Project/tracks/wake_up/wake_up  (1) — копия — копия.mp3'
 y,sr = librosa.load(song_path,sr=22050)
 print(y)
 def cut_song(song):
