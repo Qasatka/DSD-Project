@@ -34,7 +34,6 @@ myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
 sd.wait()  # Wait until recording is finished
 write('output.wav', fs, myrecording)  # Save as WAV file
 song_path = 'output.wav'
-x,sr = librosa.load(song_path,sr=41000)
 x = prepare_song(song_path)
 x=np.expand_dims(x, axis=-1)
 new_model = tf.keras.models.load_model('/home/bekzhan/Desktop/dsd/DSD-Project/saved_model/first_model')
